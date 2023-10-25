@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html data-theme="retro">
+    <head>
+        <title>Choose Your Character!</title>
+        <link rel="icon" type="image/x-icon" href="AllianceFavicon.png">
+        <link rel="stylesheet" href="output.css" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <%- include('header', {}); %>
+
+    <body class="h-[calc(100vh-68px)] overflow-hidden">
+        <form name="quizform" action="/form" method="POST">
+
+        <div class="carousel w-full overflow-auto">
+            <div id="slide1" class="carousel-item relative w-full h-[calc(100vh-68px)]">
+              <img src="background1.jpg" class="w-full object-cover" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide12" class="btn btn-circle btn-secondary">❮</a> 
+
+                <div class="card card-side bg-base-100 shadow-xl w-96">
+                    <!-- <figure><img src="cadenzafireplacecloseup.png" alt="Bard by fireplace"/></figure> -->
+                    <div class="card-body">
+                      <h2 class="card-title">Who Will You Become?</h2>
+                      <p>Try our short quiz for ideas for your ideal fantasy persona.</p>
+                    </div>
+                  </div>
+
+                <a href="#slide2" class="btn btn-circle btn-secondary">❯</a>
+              </div>
+            </div> 
+
+            <div id="slide2" class="carousel-item relative w-full  h-[calc(100vh-68px)]">
+              <img src="background2.jpg" class="w-full object-cover"/>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle btn-secondary">❮</a> 
+
+                <div id="questions">
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <div class="card-body">
+                          <h2 class="card-title">Question One:</h2>
+                          <p>Are you willing to wear makeup or prosthetics as part of your costume?</p>
+                        </div>
+                      </div>
+    
+                      <input name="one" type="radio" aria-label="Yes" value="a" class="btn btn-secondary" id="questionbutton"></input>
+                      <input name="one" type="radio" aria-label="Not a lot" value="b" class="btn btn-secondary" id="questionbutton"></input>
+                      <input name="one" type="radio" aria-label="No" value="c" class="btn btn-secondary" id="questionbutton"></input>
+                </div>
+
+                <a href="#slide3" class="btn btn-circle btn-secondary">❯</a>
+              </div>
+            </div> 
+
+            <div id="slide3" class="carousel-item relative w-full  h-[calc(100vh-68px)]">
+                <img src="background3.jpg" class="w-full object-cover"/>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide2" class="btn btn-circle btn-secondary">❮</a> 
+  
+                  <div id="questions">
+                      <div class="card w-96 bg-base-100 shadow-xl">
+                          <div class="card-body">
+                            <h2 class="card-title">Question Two:</h2>
+                            <p>Are you able to participate in light-touch LARP combat?</p>
+                          </div>
+                        </div>
+      
+                        <input name="two" type="radio" aria-label="Yes" value="a" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="two" type="radio" aria-label="No" value="b" class="btn btn-secondary" id="questionbutton"></input>
+                  </div>
+  
+                  <a href="#slide4" class="btn btn-circle btn-secondary">❯</a>
+                </div>
+              </div> 
+
+              <div id="slide4" class="carousel-item relative w-full  h-[calc(100vh-68px)]">
+                <img src="background4.jpg" class="w-full object-cover"/>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide3" class="btn btn-circle btn-secondary">❮</a> 
+  
+                  <div id="questions">
+                      <div class="card w-96 bg-base-100 shadow-xl">
+                          <div class="card-body">
+                            <h2 class="card-title">Question Three:</h2>
+                            <p>What do you value most?</p>
+                          </div>
+                        </div>
+      
+                        <input name="three" type="radio" aria-label="My things: I can always rely on them." value="a" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="three" type="radio" aria-label="My honor: I pride myself on my character." value="b" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="three" type="radio" aria-label="My people: I am loyal to a fault." value="c" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="three" type="radio" aria-label="My freedom: I want to live life on my own terms." value="d" class="btn btn-secondary" id="questionbutton"></input>
+                  </div>
+  
+                  <a href="#slide5" class="btn btn-circle btn-secondary">❯</a>
+                </div>
+              </div> 
+
+              <div id="slide5" class="carousel-item relative w-full  h-[calc(100vh-68px)]">
+                <img src="background5.jpg" class="w-full object-cover"/>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide4" class="btn btn-circle btn-secondary">❮</a> 
+  
+                  <div id="questions">
+                      <div class="card w-96 bg-base-100 shadow-xl">
+                          <div class="card-body">
+                            <h2 class="card-title">Question Four:</h2>
+                            <p>How do you respond to threats?</p>
+                          </div>
+                        </div>
+      
+                        <input name="four" type="radio" aria-label="Fight" value="a" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="four" type="radio" aria-label="Run" value="b" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="four" type="radio" aria-label="Negotiate" value="c" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="four" type="radio" aria-label="I am the threat." value="d" class="btn btn-secondary" id="questionbutton"></input>
+                  </div>
+  
+                  <a href="#slide6" class="btn btn-circle btn-secondary">❯</a>
+                </div>
+              </div> 
+
+              <div id="slide6" class="carousel-item relative w-full  h-[calc(100vh-68px)]">
+                <img src="background6.jpg" class="w-full object-cover"/>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide5" class="btn btn-circle btn-secondary">❮</a> 
+  
+                  <div id="questions">
+                      <div class="card w-96 bg-base-100 shadow-xl">
+                          <div class="card-body">
+                            <h2 class="card-title">Question Five:</h2>
+                            <p>How do you respond to authority?</p>
+                          </div>
+                        </div>
+      
+                        <input name="five" type="radio" aria-label="Nobody can tell me what to do!" value="a" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="five" type="radio" aria-label="I'll listen if it's for the greater good." value="b" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="five" type="radio" aria-label="I'd rather be the authority." value="c" class="btn btn-secondary" id="questionbutton"></input>
+                  </div>
+  
+                  <a href="#slide7" class="btn btn-circle btn-secondary">❯</a>
+                </div>
+              </div> 
+
+              <div id="slide7" class="carousel-item relative w-full  h-[calc(100vh-68px)]">
+                <img src="background7.jpg" class="w-full object-cover"/>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide6" class="btn btn-circle btn-secondary">❮</a> 
+  
+                  <div id="questions">
+                      <div class="card w-96 bg-base-100 shadow-xl">
+                          <div class="card-body">
+                            <h2 class="card-title">Question Six:</h2>
+                            <p>How do you solve difficult problems?</p>
+                          </div>
+                        </div>
+      
+                        <input name="six" type="radio" aria-label="I tend to think and plan a lot before acting." value="a" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="six" type="radio" aria-label="Violence is never the answer. Violence is a question, and the answer is yes." value="b" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="six" type="radio" aria-label="I am easygoing, and I follow my feelings and instincts." value="c" class="btn btn-secondary" id="questionbutton"></input>
+                  </div>
+  
+                  <a href="#slide8" class="btn btn-circle btn-secondary">❯</a>
+                </div>
+              </div> 
+
+              <div id="slide8" class="carousel-item relative w-full  h-[calc(100vh-68px)]">
+                <img src="background8.jpg" class="w-full object-cover"/>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide7" class="btn btn-circle btn-secondary">❮</a> 
+  
+                  <div id="questions">
+                      <div class="card w-96 bg-base-100 shadow-xl">
+                          <div class="card-body">
+                            <h2 class="card-title">Question Seven:</h2>
+                            <p>What style of combat do you prefer?</p>
+                          </div>
+                        </div>
+      
+                        <input name="seven" type="radio" aria-label="Hand-to-hand fighting with cool weapons" value="a" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="seven" type="radio" aria-label="Doing damage from a distance or from behind" value="b" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="seven" type="radio" aria-label="Using magic to hurt my enemies or support my allies" value="c" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="seven" type="radio" aria-label="I prefer not to fight" value="d" class="btn btn-secondary" id="questionbutton"></input>
+                  </div>
+  
+                  <a href="#slide9" class="btn btn-circle btn-secondary">❯</a>
+                </div>
+              </div> 
+
+              <div id="slide9" class="carousel-item relative w-full  h-[calc(100vh-68px)]">
+                <img src="background9.jpg" class="w-full object-cover"/>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide8" class="btn btn-circle btn-secondary">❮</a> 
+  
+                  <div id="questions">
+                      <div class="card w-96 bg-base-100 shadow-xl">
+                          <div class="card-body">
+                            <h2 class="card-title">Question Eight:</h2>
+                            <p>What hobby do you enjoy most?</p>
+                          </div>
+                        </div>
+      
+                        <input name="eight" type="radio" aria-label="Sports" value="a" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="eight" type="radio" aria-label="Travel" value="b" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="eight" type="radio" aria-label="Crafts" value="c" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="eight" type="radio" aria-label="Reading" value="d" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="eight" type="radio" aria-label="I have too many hobbies!" value="e" class="btn btn-secondary" id="questionbutton"></input>
+                  </div>
+  
+                  <a href="#slide10" class="btn btn-circle btn-secondary">❯</a>
+                </div>
+              </div> 
+
+              <div id="slide10" class="carousel-item relative w-full  h-[calc(100vh-68px)]">
+                <img src="background10.jpg" class="w-full object-cover"/>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide9" class="btn btn-circle btn-secondary">❮</a> 
+  
+                  <div id="questions">
+                      <div class="card w-96 bg-base-100 shadow-xl">
+                          <div class="card-body">
+                            <h2 class="card-title">Question Nine:</h2>
+                            <p>Who was your favorite Tolkien movie character?</p>
+                          </div>
+                        </div>
+                        <div id="overflowbuttons" class="grid grid-cols-3 gap-4">
+                        <input name="nine" type="radio" aria-label="Legolas" value="a" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="nine" type="radio" aria-label="Eowyn" value="b" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="nine" type="radio" aria-label="Frodo" value="c" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="nine" type="radio" aria-label="Gimli" value="d" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="nine" type="radio" aria-label="Aragorn" value="e" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="nine" type="radio" aria-label="Gandalf" value="f" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="nine" type="radio" aria-label="Galadriel" value="g" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="nine" type="radio" aria-label="Gollum" value="h" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="nine" type="radio" aria-label="Radagast" value="i" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="nine" type="radio" aria-label="Samwise" value="j" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="nine" type="radio" aria-label="Sauron" value="k" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="nine" type="radio" aria-label="Treebeard" value="l" class="btn btn-secondary" id="questionbutton"></input>
+                        </div>
+                    </div>
+  
+                  <a href="#slide11" class="btn btn-circle btn-secondary">❯</a>
+                </div>
+              </div> 
+
+              <div id="slide11" class="carousel-item relative w-full  h-[calc(100vh-68px)]">
+                <img src="background11.jpg" class="w-full object-cover"/>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide10" class="btn btn-circle btn-secondary">❮</a> 
+  
+                  <div id="questions">
+                      <div class="card w-96 bg-base-100 shadow-xl">
+                          <div class="card-body">
+                            <h2 class="card-title">Question Ten:</h2>
+                            <p>What is your favorite color?</p>
+                          </div>
+                        </div>
+      
+                        <input name="ten" type="radio" aria-label="Red" value="a" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="ten" type="radio" aria-label="Blue" value="b" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="ten" type="radio" aria-label="Green" value="c" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="ten" type="radio" aria-label="Black" value="d" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="ten" type="radio" aria-label="Yellow" value="e" class="btn btn-secondary" id="questionbutton"></input>
+                        <input name="ten" type="radio" aria-label="I can't decide!" value="f" class="btn btn-secondary" id="questionbutton"></input>
+                </div>
+  
+                  <a href="#slide12" class="btn btn-circle btn-secondary">❯</a>
+                </div>
+            </div>
+
+            <div id="slide12" class="carousel-item relative w-full h-[calc(100vh-68px)]">
+              <img src="background12.avif" class="w-full object-cover" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide11" class="btn btn-circle btn-secondary">❮</a> 
+
+                <div id="questions">
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <div class="card-body">
+                          <h2 class="card-title">Your path awaits!</h2>
+                          <p></p>
+                        </div>
+                      </div>
+    
+                      <input name="submit" type="submit" aria-label="Radio" value="Submit" class="btn btn-secondary" id="questionbutton"></input>
+                    </div>
+
+                <a href="#slide1" class="btn btn-circle btn-secondary">❯</a>
+              </div>
+            </div> 
+
+          </div>
+        </form>
+        
+    </body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html data-theme="retro">
+    <head>
+        <title>Choose Your Character!</title>
+        <link rel="icon" type="image/x-icon" href="AllianceFavicon.png">
+        <link rel="stylesheet" href="output.css" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <%- include('header', {}); %>
+
+    <body class="h-[calc(100vh-68px)] overflow-hidden">
+
+
+        <div class="carousel w-full overflow-auto">
+            <div id="slide1" class="carousel-item relative w-full h-[calc(100vh-68px)]">
+              <img src="background12.avif" class="w-full object-cover" />
+              <div class="absolute transform -translate-y-1/2 left-5 right-5 top-1/2 grid grid-cols-6 gap-4">
+
+                <div class="card bg-base-100 shadow-xl mb-20 col-start-2 col-span-4">
+                  <!-- <figure class="px-10 pt-10">
+                    <img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" class="rounded-xl" />
+                  </figure> -->
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title">Welcome to the World of Fortannis!</h2>
+                    <p>At our Character Info Center, learn and access resources to help you build your ideal fantasy character to play at an Alliance Live Action Role Play event!</p>
+                    <div class="card-actions">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card bg-base-100 shadow-xl col-start-1 col-span-2">
+                  <!-- <figure class="px-10 pt-10">
+                    <img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" class="rounded-xl" />
+                  </figure> -->
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title">Races</h2>
+                    <p>Explore the wide variety of characters you can play and encounter during your LARP experience.</p>
+                    <div class="card-actions">
+                      <!-- <button class="btn btn-primary">Buy Now</button> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl col-span-2">
+                  <!-- <figure class="px-10 pt-10">
+                    <img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" class="rounded-xl" />
+                  </figure> -->
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title">Classes</h2>
+                    <p>Learn about the different roles and talents your character might use.</p>
+                    <div class="card-actions">
+                      <!-- <button class="btn btn-primary">Buy Now</button> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl col-span-2">
+                  <!-- <figure class="px-10 pt-10">
+                    <img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" class="rounded-xl" />
+                  </figure> -->
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title">Take our Quiz!</h2>
+                    <p>Our short personality quiz can help you decide what type of character you might want to play.</p>
+                    <div class="card-actions">
+                      <!-- <button class="btn btn-primary">Buy Now</button> -->
+                    </div>
+                  </div>
+                </div>
+                </div>
+
+          </div>
+            </div>
+            </div>
+    </body>
+
+</html>

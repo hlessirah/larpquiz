@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html data-theme="retro">
+    <head>
+        <title>Choose Your Character!</title>
+        <link rel="icon" type="image/x-icon" href="AllianceFavicon.png">
+        <link rel="stylesheet" href="/output.css" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <%- include('header', {}); %>
+
+    <body>
+
+        <div class="drawer lg:drawer-open h-[calc(100vh-68px)]">
+            <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+            <div class="drawer-content flex flex-col items-center justify-center">
+              <!-- Page content here -->
+
+              <div class="carousel w-full overflow-auto">
+                
+                <div id="slide1" class="carousel-item relative w-full h-[calc(100vh-68px)]">
+                  <img src="/background3.jpg" class="w-full object-cover" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide16" class="btn btn-circle">❮</a> 
+    
+                    <div class="hero min-h-screen bg-base-200">
+                      <div class="hero-content flex-col lg:flex-row-reverse">
+                        <!-- <img src="weaponicon.png" class="max-w-sm rounded-lg shadow-2xl" /> -->
+                        <div>
+                          <h1 class="text-5xl font-bold">Races</h1>
+                          <p class="py-6">Humans are not the only race in Fortannis. There are many unusual people, such as elves, dwarves, orcs, and more. Each race has their own cultures and nuances that add to the rich tapestry of the world of Fortannis. <br>
+                                          Knowing the race of your character can help inform their personality, their background, and their sense of place within the world as a whole.</p>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+    
+                <div id="slide2" class="carousel-item relative w-full h-[calc(100vh-68px)]">
+                  <img src="background4.jpg" class="w-full object-cover" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+
+                    <div class="hero min-h-screen bg-base-200">
+                      <div class="hero-content flex-col lg:flex-row-reverse">
+                        <img src="weaponicon.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                          <h1 class="text-5xl font-bold">Biata</h1>
+                          <p class="py-6">“We carry the burden of history, so that no one may forget.”<br>
+                            Biata are a race with a deep affinity to Earth Magic and a wounded, but healing relationship to Celestial Magic. Feathers grow from above their eyes and reveal not only their personality and temperament, but a distant relation to creatures of old. Along with a life expectancy spanning millennia, Biata have Mental Abilities that allow them to defend and disrupt command magic, as well as allow them to access, store, and change their own memories and those of other willing participants. Biata society is built around repositories of memory created by their ancestors. In contact with members of other races, Biata seek to be leaders and advisors, having witnessed generations of triumphs and failures in the shorter lived races of Fortannis.</p>
+                          <button class="btn btn-primary">More Information</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="background5.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+
+                    <div class="hero min-h-screen bg-base-200">
+                      <div class="hero-content flex-col lg:flex-row-reverse">
+                        <img src="clawicon.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                          <h1 class="text-5xl font-bold">Dark Elves</h1>
+                          <p class="py-6">“Stand above or stand apart, for beauty is timeless and we shall bear witness.”<br>
+                            Dark Elves are a race whose origin is cloaked in clouds and shadows. This unknown history drives them to be distinct and distinguished from the rest of Fortannis’s inhabitants. Their morality is informed as much by elegance as by virtue, seeking the graceful as much as the good and true. Civilization is a brutal and disheveled thing at times; Dark Elves often chose to stay in the shadowy fringes or looming heights to stay detached from the everyday grimness of life. They surround themselves in elegant things and ideas so that they may live beautiful lives.</p>
+                          <button class="btn btn-primary">More Information</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="background6.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+
+                    <div class="hero min-h-screen bg-base-200">
+                      <div class="hero-content flex-col lg:flex-row-reverse">
+                        <img src="stealthicon.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                          <h1 class="text-5xl font-bold">Dryads</h1>
+                          <p class="py-6">“Harmony with nature brings harmony in life.”<br>
+                            Dryads are so deeply connected to the natural world that their bodies have taken up plant or fungus-like features. They are one of the oldest races, having walked the forests of Fortannis before the time of Elves and Biata. For reasons lost to history and memory, the Dryads merged with the very trees themselves as part of something known as “The Great Slumber,” and it has only been within the last generation that they have awoken from their selfimposed exile. Dryads now find themselves in an unfamiliar world, seeking to find a new balance with nature or returning it to the primal form it once had.</p>
+                          <button class="btn btn-primary">More Information</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <a href="#slide5" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+
+                <div id="slide5" class="carousel-item relative w-full">
+                  <img src="background7.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+
+                    <div class="hero min-h-screen bg-base-200">
+                      <div class="hero-content flex-col lg:flex-row-reverse">
+                        <img src="weaponicon.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                          <h1 class="text-5xl font-bold">Dwarves</h1>
+                          <p class="py-6">“Valor forged. Virtue honed. Creating the tools to build a better world.”<br>
+                            Dwarves have explored the very edges of Fortannis. They take the finest materials and the rarest knowledge and seek to craft the greatest society. Dwarves pride themselves on the quality of life they seek to build for themselves. They craft the finest weapons, cut the finest gems and stones, weave the finest cloth, and brew the finest ale. No Dwarf would ever admit the beaty of an item crafted by a member of another race exceeds that which a Dwarf could create. Their dedication to searching for new resources borders on obsessive, and their extraction of those resources borders on callous. Dwarves believe that the virtue and honor of an individual can be built like a fortress.</p>
+                          <button class="btn btn-primary">More Information</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <a href="#slide6" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+
+                <div id="slide6" class="carousel-item relative w-full">
+                  <img src="background8.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide5" class="btn btn-circle">❮</a> 
+
+                    <div class="hero min-h-screen bg-base-200">
+                      <div class="hero-content flex-col lg:flex-row-reverse">
+                        <img src="magicicon.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                          <h1 class="text-5xl font-bold">Elves</h1>
+                          <p class="py-6">“Mastery of the Land. Mastery of the Self.”<br>
+                            Elves are the self-appointed greatest of Fortannis. No rational argument can prove them wrong after thousands of years of contemplation and mastery. No strength ofarms can challenge the might of those who can and will wage war over several human lifetimes. Elves adapt to their surroundings over centuries to the point where everyone just assumes they have always lived there. Elves are the product of slow and laborious self-cultivation and training. They will always be right, or simply outlive those who dare to think them wrong.</p>
+                          <button class="btn btn-primary">More Information</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <a href="#slide7" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+
+                <div id="slide7" class="carousel-item relative w-full">
+                  <img src="background9.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide6" class="btn btn-circle">❮</a> 
+
+                    <div class="hero min-h-screen bg-base-200">
+                      <div class="hero-content flex-col lg:flex-row-reverse">
+                        <img src="swordicon.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                          <h1 class="text-5xl font-bold">High Ogres</h1>
+                          <p class="py-6">“They fight a war they’ll never win, for a future they’ll never see.”<br>
+                            High Ogres are a short-lived race with an unyielding and untiring devotion to the eradication of necromancy and the Undead. This dedication has empowered them with gifts enabling them to resist necromantic effects and shrug off blows that would fell another. With a lifespan better measured in years than decades, High Ogres grow to adulthood upon being able to stand and fight the undead horde. Given the immense task they have been set upon, each High Ogre understands that their war is a conflict that spans beyond their own life and carries onto the next generation, as their forebears have passed it on to them. Their main aim when interacting with the other races is the eradication of necromancy from the face of Fortannis.</p>
+                          <button class="btn btn-primary">More Information</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <a href="#slide8" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+
+                <div id="slide8" class="carousel-item relative w-full">
+                  <img src="background10.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide7" class="btn btn-circle">❮</a> 
+
+                    <div class="hero min-h-screen bg-base-200">
+                      <div class="hero-content flex-col lg:flex-row-reverse">
+                        <img src="scalesicon.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                          <h1 class="text-5xl font-bold">High Orcs</h1>
+                          <p class="py-6">“The best beliefs are worth fighting for.”<br>
+                            High Orcs are a race whose short lives are shaped by conflict. As one High Orc defeats another in combat or challenge, the rest of the group rallies behind them as they believe that such abilities will only make them all stronger. A powerful chieftain or warlord will be expected to be able to lead successful attacks that ultimately provide for the entire community. Every tradition and belief in High Orcish life is defined by someone fighting for it and winning. This means that with such short individual life spans, High Orcish society can have wide and rapid shifts in outlook from one generation to the next. Wise elders may offer advice to the youth, but may find it dismissed if they can’t enforce it through victory. The one constant for every High Orc is that they are always prepared to fight, live, and survive.</p>
+                          <button class="btn btn-primary">More Information</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+
+                <div id="slide9" class="carousel-item relative w-full">
+                  <img src="background11.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide8" class="btn btn-circle">❮</a> 
+
+                    <div class="hero min-h-screen bg-base-200">
+                      <div class="hero-content flex-col lg:flex-row-reverse">
+                        <img src="scalesicon.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                          <h1 class="text-5xl font-bold">Hoblings</h1>
+                          <p class="py-6">“Quick as a spring. Sturdy as steel. Complex Contraptions. Elaborate Meals."<br>
+                            Hoblings are a group who seek to improve Fortannis through craft, discovery, and trade. Through their efforts there is a hope that all lives may be made more comfortable, their own most of all. Hoblings believe that the world is a complex system of interlocking parts, much like the devices they are so fond of crafting. Hoblings assess the material world by finding the value and use in all things, whether its purpose is to harm or to heal, to provide hard defense or soft respite. Kingdoms and commerce, politics and people, they are all just cogs and gears whirring away, and to be a Hobling is to sit in the center and watch the rest of the world turn.</p>
+                          <button class="btn btn-primary">More Information</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <a href="#slide10" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+
+                <div id="slide10" class="carousel-item relative w-full">
+                  <img src="background12.avif" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide9" class="btn btn-circle">❮</a> 
+
+                    <div class="hero min-h-screen bg-base-200">
+                      <div class="hero-content flex-col lg:flex-row-reverse">
+                        <img src="scalesicon.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                          <h1 class="text-5xl font-bold">Humans</h1>
+                          <p class="py-6">“Always the guest. Often the host. Found during trouble, or when needed the most.”<br>
+                            Humans are the most unremarkable of the races, yet buried within them lies the greatest potential. In spite of their shortcomings, they stand shoulder to shoulder with the rest of Fortannis to solve the world’s problems, and occasionally cause them. Accuse them of doing nothing to solve their problems. Accuse them of trying to right the world’s wrongs. But you can never accuse a Human of not doing… something.</p>
+                          <button class="btn btn-primary">More Information</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <a href="#slide11" class="btn btn-circle">❯</a>
+                  </div>
+                  </div>
+
+                    <div id="slide11" class="carousel-item relative w-full">
+                      <img src="background1.jpg" class="w-full" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide10" class="btn btn-circle">❮</a> 
+    
+                        <div class="hero min-h-screen bg-base-200">
+                          <div class="hero-content flex-col lg:flex-row-reverse">
+                            <img src="scalesicon.png" class="max-w-sm rounded-lg shadow-2xl" />
+                            <div>
+                              <h1 class="text-5xl font-bold">Oathsworn</h1>
+                              <p class="py-6">“Our Oath is our strength, Our truth is our bond”<br>
+                                Oathsworn are a race infused with supernatural durability due to their dedication to truth, honor and loyalty. The Oathsworn origins lay in dozens of separate groups from familial clans to entire civilizations, but all have been united under The First Oath, a vow to defend Fortannis from those beyond the material plane. This oath marked the entire race with stony growths along their temples and forehead, representing their resolve. Gathered together in chosen families, the Oathsworn find their place in Fortannis through unbroken loyalty to each other and unbroken vows with the other races.</p>
+                              <button class="btn btn-primary">More Information</button>
+                            </div>
+                          </div>
+                        </div>
+    
+                        <a href="#slide12" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+
+                    <div id="slide12" class="carousel-item relative w-full">
+                      <img src="background2.jpg" class="w-full" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide11" class="btn btn-circle">❮</a> 
+    
+                        <div class="hero min-h-screen bg-base-200">
+                          <div class="hero-content flex-col lg:flex-row-reverse">
+                            <img src="scalesicon.png" class="max-w-sm rounded-lg shadow-2xl" />
+                            <div>
+                              <h1 class="text-5xl font-bold">Selunari</h1>
+                              <p class="py-6">“Home is people and not a place. Life is a journey at a relentless pace.”<br>
+                                Selunari are a race with a strong connection to the stars. They are as numerous and bound together as those distant, benevolent lights, placing their familial connections above all else. To those within their family, both blood and adopted, their warmth is mirrored only by the sun and their care as constant as the North Star. Those who violate their trust will find great similarity between their retribution and the cold depths of the void between all those brilliant lights. This stellar connection manifests as gems upon the Selunari’s forehead.</p>
+                              <button class="btn btn-primary">More Information</button>
+                            </div>
+                          </div>
+                        </div>
+                        
+    
+                        <a href="#slide13" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+
+                    <div id="slide13" class="carousel-item relative w-full">
+                      <img src="background3.jpg" class="w-full" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide12" class="btn btn-circle">❮</a> 
+    
+                        <div class="hero min-h-screen bg-base-200">
+                          <div class="hero-content flex-col lg:flex-row-reverse">
+                            <img src="scalesicon.png" class="max-w-sm rounded-lg shadow-2xl" />
+                            <div>
+                              <h1 class="text-5xl font-bold">Stone Elves</h1>
+                              <p class="py-6">“Logic and reason, written into mortal flesh.”<br>
+                                Stone Elves are devoid of emotional expression, hyper rational, and exceptionally long-lived. Their supreme emotional control manifests in an ability to sooth and warp the emotions of others, as a tailor might mend a torn shirt, while their extended life span and mastery of reason leads them to look at life and the world as a puzzle to be solved rather than an experience they participate in.</p>
+                              <button class="btn btn-primary">More Information</button>
+                            </div>
+                          </div>
+                        </div>
+    
+                        <a href="#slide14" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+
+                    <div id="slide14" class="carousel-item relative w-full">
+                      <img src="background4.jpg" class="w-full" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide13" class="btn btn-circle">❮</a> 
+    
+                        <div class="hero min-h-screen bg-base-200">
+                          <div class="hero-content flex-col lg:flex-row-reverse">
+                            <img src="scalesicon.png" class="max-w-sm rounded-lg shadow-2xl" />
+                            <div>
+                              <h1 class="text-5xl font-bold">Sylvanborn</h1>
+                              <p class="py-6">“Above all else, be free!”<br>
+                                Sylvanborn are a timeless race with a long and winding connection to the Fey. This lingering association with the Fey realm is made most evident by the Sylvanborn passion for freedom, both their own as well as that of others. Sylvanborn also posses small horns and pointed ears, similar to that of the Satyr, perhaps indicating a more direct link with that particular breed of Fey.</p>
+                              <button class="btn btn-primary">More Information</button>
+                            </div>
+                          </div>
+                        </div>
+    
+                        <a href="#slide15" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+
+                    <div id="slide15" class="carousel-item relative w-full">
+                      <img src="background5.jpg" class="w-full" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide14" class="btn btn-circle">❮</a> 
+    
+                        <div class="hero min-h-screen bg-base-200">
+                          <div class="hero-content flex-col lg:flex-row-reverse">
+                            <img src="scalesicon.png" class="max-w-sm rounded-lg shadow-2xl" />
+                            <div>
+                              <h1 class="text-5xl font-bold">Wylderkin</h1>
+                              <p class="py-6">“Life is a gift: Precious to give and solemn to take. Let instinct be our guide.”<br>
+                                Wylderkin is the collective name for all born with a mixture of animal and humanoid characteristics. The individual members of this race can have animal, avian, reptilian, aquatic or insectoid traits. Wylderkin often refer to themselves by the natural creature they are connected to: Wolf-kin, Bird-kin, Spider-kin, but may have more formal titles depending on culture and history. The origin of the traits possessed by the Wylderkin is unknown, but they have abilities based on the creature these characteristics come from. Wylderkin can often find themselves at odds with their connection to nature, as both high society and the deep wilds are an ill fit for their desire for community. To be close to the cycle of life and death is a gift that all Wylderkin cherish, and it is that gift which Wylderkin seek to share with the rest of Fortannis through words and deeds.</p>
+                              <button class="btn btn-primary">More Information</button>
+                            </div>
+                          </div>
+                        </div>
+    
+                        <a href="#slide16" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+
+                    <div id="slide16" class="carousel-item relative w-full">
+                      <img src="background2.jpg" class="w-full" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide15" class="btn btn-circle">❮</a> 
+    
+                        <div class="hero min-h-screen bg-base-200">
+                          <div class="hero-content flex-col lg:flex-row-reverse">
+                            <img src="scalesicon.png" class="max-w-sm rounded-lg shadow-2xl" />
+                            <div>
+                              <h1 class="text-5xl font-bold">NPCs</h1>
+                              <p class="py-6">"Thank you, NPCs!"<br>
+                                NPCs are perhaps the most important group of players. These players embody a wide variety of roles and characters as directed by the Alliance staff and may appear as a friend or foe. These individuals are highly adaptable and are able to play any character, populating the world of Fortannis and helping bring the world and its story to life.</p>
+                              <button class="btn btn-primary">More Information</button>
+                            </div>
+                          </div>
+                        </div>
+    
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+
+              </div>
+
+              <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden">Open drawer</label>
+            
+            </div> 
+
+            <!-- sidebar -->
+            <div class="drawer-side h-[calc(100vh-68px)]">
+              <label for="my-drawer-2" aria-label="close sidebar" class="drawer-overlay"></label> 
+              <ul class="menu p-4 w-1/8 min-h-full bg-base-200 text-base-content">
+                <!-- Sidebar content here -->
+                <li><a href="#slide2">Biata</a></li>
+                <li><a href="#slide3">Dark Elves</a></li>
+                <li><a href="#slide4">Dryads</a></li>
+                <li><a href="#slide5">Dwarves</a></li>
+                <li><a href="#slide6">Elves</a></li>
+                <li><a href="#slide7">High Ogres</a></li>
+                <li><a href="#slide8">High Orcs</a></li>
+                <li><a href="#slide9">Hoblings</a></li>
+                <li><a href="#slide10">Humans</a></li>
+                <li><a href="#slide11">Oathsworn</a></li>
+                <li><a href="#slide12">Selunari</a></li>
+                <li><a href="#slide13">Stone Elves</a></li>
+                <li><a href="#slide14">Sylvanborn</a></li>
+                <li><a href="#slide15">Wylderkin</a></li>
+                <li><a href="#slide16">NPCs</a></li>
+              </ul>
+            </div>
+          </div>
+        
+        
+    </body>
+
+</html>
