@@ -1909,10 +1909,6 @@ html {
   z-index: 50;
 }
 
-.col-span-3 {
-  grid-column: span 3 / span 3;
-}
-
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -1921,16 +1917,12 @@ html {
   grid-column: span 4 / span 4;
 }
 
-.col-start-2 {
-  grid-column-start: 2;
-}
-
 .col-start-1 {
   grid-column-start: 1;
 }
 
-.col-end-2 {
-  grid-column-end: 2;
+.col-start-2 {
+  grid-column-start: 2;
 }
 
 .mb-20 {
@@ -1977,10 +1969,6 @@ html {
   min-height: 100vh;
 }
 
-.w-2\/5 {
-  width: 40%;
-}
-
 .w-96 {
   width: 24rem;
 }
@@ -2016,11 +2004,6 @@ html {
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.columns-3 {
-  -moz-columns: 3;
-       columns: 3;
 }
 
 .grid-cols-1 {
@@ -2101,11 +2084,6 @@ html {
 .bg-neutral {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--n) / var(--tw-bg-opacity));
-}
-
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 .object-cover {
