@@ -10,7 +10,8 @@
 
     <%- include('header', {}); %>
 
-    <body class="h-[calc(100vh-68px)] overflow-hidden">
+    <!-- <body class="h-[calc(100vh-68px)] overflow-hidden"> -->
+    <body class="h-screen overflow-hidden">
         <form name="quizform" action="/form" method="POST">
 
         <div class="carousel w-full overflow-auto">
@@ -20,7 +21,6 @@
                 <a href="#slide12" class="btn btn-circle btn-secondary">❮</a> 
 
                 <div class="card card-side bg-base-100 shadow-xl w-96">
-                    <!-- <figure><img src="cadenzafireplacecloseup.png" alt="Bard by fireplace"/></figure> -->
                     <div class="card-body">
                       <h2 class="card-title">Who Will You Become?</h2>
                       <p>Try our short quiz for ideas for your ideal fantasy persona.</p>
@@ -36,17 +36,17 @@
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide1" class="btn btn-circle btn-secondary">❮</a> 
 
-                <div id="questions">
-                    <div class="card w-96 bg-base-100 shadow-xl">
+                <div id="questions" class="sm:max-h-[calc(80vh)] sm:overflow-y-scroll">
+                    <div class="card lg:w-[calc(380px)] w-[calc(50vw)] sm:mt-[calc(30vh)] bg-base-100 shadow-xl">
                         <div class="card-body">
                           <h2 class="card-title">Question One:</h2>
                           <p>Are you willing to wear makeup or prosthetics as part of your costume?</p>
                         </div>
                       </div>
     
-                      <input name="one" type="radio" aria-label="Yes" value="a" class="btn btn-secondary" id="questionbutton"></input>
-                      <input name="one" type="radio" aria-label="Not a lot" value="b" class="btn btn-secondary" id="questionbutton"></input>
-                      <input name="one" type="radio" aria-label="No" value="c" class="btn btn-secondary" id="questionbutton"></input>
+                      <input name="one" type="radio" aria-label="Yes" value="a" class="btn btn-secondary lg:w-[calc(380px)] w-[calc(50vw)]" id="questionbutton"></input>
+                      <input name="one" type="radio" aria-label="Not a lot" value="b" class="btn btn-secondary lg:w-[calc(380px)] w-[calc(50vw)]" id="questionbutton"></input>
+                      <input name="one" type="radio" aria-label="No" value="c" class="btn btn-secondary lg:w-[calc(380px)] w-[calc(50vw)]" id="questionbutton"></input>
                 </div>
 
                 <a href="#slide3" class="btn btn-circle btn-secondary">❯</a>
@@ -58,8 +58,8 @@
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                   <a href="#slide2" class="btn btn-circle btn-secondary">❮</a> 
   
-                  <div id="questions">
-                      <div class="card w-96 bg-base-100 shadow-xl">
+                  <div id="questions" class="sm:max-h-[calc(80vh)] sm:overflow-y-scroll">
+                      <div class="card lg:w-[calc(380px)] w-[calc(50vw)] sm:mt-[calc(5vh)] bg-base-100 shadow-xl">
                           <div class="card-body">
                             <h2 class="card-title">Question Two:</h2>
                             <p>Are you able to participate in light-touch LARP combat?</p>
@@ -79,8 +79,8 @@
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                   <a href="#slide3" class="btn btn-circle btn-secondary">❮</a> 
   
-                  <div id="questions">
-                      <div class="card w-96 bg-base-100 shadow-xl">
+                  <div id="questions" class="sm:max-h-[calc(80vh)] sm:overflow-y-scroll">
+                      <div class="card lg:w-[calc(380px)] w-[calc(50vw)] sm:mt-[calc(10vh)] bg-base-100 shadow-xl">
                           <div class="card-body">
                             <h2 class="card-title">Question Three:</h2>
                             <p>What do you value most?</p>
@@ -102,8 +102,8 @@
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                   <a href="#slide4" class="btn btn-circle btn-secondary">❮</a> 
   
-                  <div id="questions">
-                      <div class="card w-96 bg-base-100 shadow-xl">
+                  <div id="questions" class="sm:max-h-[calc(80vh)] sm:overflow-y-scroll">
+                      <div class="card lg:w-[calc(380px)] w-[calc(50vw)] sm:mt-[calc(10vh)] bg-base-100 shadow-xl">
                           <div class="card-body">
                             <h2 class="card-title">Question Four:</h2>
                             <p>How do you respond to threats?</p>
@@ -125,8 +125,8 @@
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                   <a href="#slide5" class="btn btn-circle btn-secondary">❮</a> 
   
-                  <div id="questions">
-                      <div class="card w-96 bg-base-100 shadow-xl">
+                  <div id="questions" class="sm:max-h-[calc(80vh)] sm:overflow-y-scroll">
+                      <div class="card lg:w-[calc(380px)] w-[calc(50vw)] sm:mt-[calc(5vh)] bg-base-100 shadow-xl">
                           <div class="card-body">
                             <h2 class="card-title">Question Five:</h2>
                             <p>How do you respond to authority?</p>
@@ -147,17 +147,17 @@
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                   <a href="#slide6" class="btn btn-circle btn-secondary">❮</a> 
   
-                  <div id="questions">
-                      <div class="card w-96 bg-base-100 shadow-xl">
+                  <div id="questions" class="sm:max-h-[calc(80vh)] sm:overflow-y-scroll">
+                      <div class="card lg:w-[calc(380px)] w-[calc(50vw)] sm:mt-[calc(5vh)] bg-base-100 shadow-xl">
                           <div class="card-body">
                             <h2 class="card-title">Question Six:</h2>
                             <p>How do you solve difficult problems?</p>
                           </div>
                         </div>
-      
-                        <input name="six" type="radio" aria-label="I tend to think and plan a lot before acting." value="a" class="btn btn-secondary" id="questionbutton"></input>
-                        <input name="six" type="radio" aria-label="Violence is never the answer. Violence is a question, and the answer is yes." value="b" class="btn btn-secondary" id="questionbutton"></input>
-                        <input name="six" type="radio" aria-label="I am easygoing, and I follow my feelings and instincts." value="c" class="btn btn-secondary" id="questionbutton"></input>
+
+                        <input name="six" type="radio" aria-label="I tend to think and plan a lot before acting." value="a" class="btn btn-secondary sm:h-fit" id="questionbutton"></input>
+                        <input name="six" type="radio" aria-label="Violence is never the answer. Violence is a question, and the answer is yes." value="b" class="btn btn-secondary sm:h-fit" id="questionbutton"></input>
+                        <input name="six" type="radio" aria-label="I am easygoing, and I follow my feelings and instincts." value="c" class="btn btn-secondary sm:h-fit" id="questionbutton"></input>
                   </div>
   
                   <a href="#slide8" class="btn btn-circle btn-secondary">❯</a>
@@ -169,8 +169,8 @@
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                   <a href="#slide7" class="btn btn-circle btn-secondary">❮</a> 
   
-                  <div id="questions">
-                      <div class="card w-96 bg-base-100 shadow-xl">
+                  <div id="questions" class="sm:max-h-[calc(80vh)] sm:overflow-y-scroll">
+                      <div class="card lg:w-[calc(380px)] w-[calc(50vw)] sm:mt-[calc(10vh)] bg-base-100 shadow-xl">
                           <div class="card-body">
                             <h2 class="card-title">Question Seven:</h2>
                             <p>What style of combat do you prefer?</p>
@@ -192,8 +192,8 @@
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                   <a href="#slide8" class="btn btn-circle btn-secondary">❮</a> 
   
-                  <div id="questions">
-                      <div class="card w-96 bg-base-100 shadow-xl">
+                  <div id="questions" class="sm:max-h-[calc(80vh)] sm:overflow-y-scroll">
+                      <div class="card lg:w-[calc(380px)] w-[calc(50vw)] sm:mt-[calc(30vh)] bg-base-100 shadow-xl">
                           <div class="card-body">
                             <h2 class="card-title">Question Eight:</h2>
                             <p>What hobby do you enjoy most?</p>
@@ -213,17 +213,17 @@
 
               <div id="slide10" class="carousel-item relative w-full  h-[calc(100vh-68px)]">
                 <img src="background10.jpg" class="w-full object-cover"/>
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <div class="absolute flex justify-between transform -translate-y-1/2 sm:top-1/2 left-5 right-5 top-1/2">
                   <a href="#slide9" class="btn btn-circle btn-secondary">❮</a> 
   
-                  <div id="questions">
-                      <div class="card w-96 bg-base-100 shadow-xl">
+                  <div id="questions" class="sm:max-h-[calc(80vh)] sm:overflow-y-scroll">
+                      <div class="card lg:w-[calc(380px)] w-[calc(50vw)] sm:mt-[calc(65vh)] bg-base-100 shadow-xl">
                           <div class="card-body">
                             <h2 class="card-title">Question Nine:</h2>
                             <p>Who was your favorite Tolkien movie character?</p>
                           </div>
                         </div>
-                        <div id="overflowbuttons" class="grid grid-cols-3 gap-4">
+                        <div id="overflowbuttons" class="grid grid-cols-3 gap-4 sm:grid-cols-2">
                         <input name="nine" type="radio" aria-label="Legolas" value="a" class="btn btn-secondary" id="questionbutton"></input>
                         <input name="nine" type="radio" aria-label="Eowyn" value="b" class="btn btn-secondary" id="questionbutton"></input>
                         <input name="nine" type="radio" aria-label="Frodo" value="c" class="btn btn-secondary" id="questionbutton"></input>
@@ -248,8 +248,8 @@
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                   <a href="#slide10" class="btn btn-circle btn-secondary">❮</a> 
   
-                  <div id="questions">
-                      <div class="card w-96 bg-base-100 shadow-xl">
+                  <div id="questions" class="sm:max-h-[calc(80vh)] sm:overflow-y-scroll">
+                      <div class="card lg:w-[calc(380px)] w-[calc(50vw)] sm:mt-[calc(30vh)] bg-base-100 shadow-xl">
                           <div class="card-body">
                             <h2 class="card-title">Question Ten:</h2>
                             <p>What is your favorite color?</p>
@@ -269,12 +269,12 @@
             </div>
 
             <div id="slide12" class="carousel-item relative w-full h-[calc(100vh-68px)]">
-              <img src="background12.avif" class="w-full object-cover" />
+              <img src="background12.jpg" class="w-full object-cover" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide11" class="btn btn-circle btn-secondary">❮</a> 
 
-                <div id="questions">
-                    <div class="card w-96 bg-base-100 shadow-xl">
+                <div id="questions" class="sm:max-h-[calc(80vh)] sm:overflow-y-scroll">
+                    <div class="card lg:w-[calc(380px)] w-[calc(50vw)] bg-base-100 shadow-xl">
                         <div class="card-body">
                           <h2 class="card-title">Your path awaits!</h2>
                           <p></p>

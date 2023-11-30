@@ -19,23 +19,20 @@ h1 {
 }
 
 #questions .card {
-    width: 380px;
+    /* width: 380px; */
 }
 
 #questionbutton {
     margin-top: 10px;
-    width: 380px;
-}
-
-#overflowbuttons {
-    /* display: flex; */
-    /* flex-direction: column !important; */
-    /* flex-wrap: wrap !important; */
-    /* align-items: center !important; */
-    /* justify-content: space-around !important; */
+    /* width: 380px; */
 }
 
 .btn-circle {
     margin-top: auto;
     margin-bottom: auto;
+}
+
+.indexpage {
+    background-image: url("/background12.jpg");
+    background-size: cover;
 }
