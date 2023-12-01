@@ -2272,8 +2272,16 @@ h1 {
     display: none;
   }
 
+  .lg\:h-\[calc\(50vh\)\] {
+    height: calc(50vh);
+  }
+
   .lg\:w-\[calc\(380px\)\] {
     width: calc(380px);
+  }
+
+  .lg\:w-\[calc\(50vw-40px\)\] {
+    width: calc(50vw - 40px);
   }
 
   .lg\:flex-row-reverse {
@@ -2316,6 +2324,14 @@ h1 {
     grid-column: span 6 / span 6;
   }
 
+  .sm\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .sm\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .sm\:col-start-1 {
     grid-column-start: 1;
   }
@@ -2356,6 +2372,10 @@ h1 {
     margin-top: calc(65vh);
   }
 
+  .sm\:mt-\[calc\(80vh\)\] {
+    margin-top: calc(80vh);
+  }
+
   .sm\:h-fit {
     height: -moz-fit-content;
     height: fit-content;
@@ -2365,6 +2385,10 @@ h1 {
     max-height: calc(80vh);
   }
 
+  .sm\:w-\[calc\(100vw-40px\)\] {
+    width: calc(100vw - 40px);
+  }
+
   .sm\:translate-y-0 {
     --tw-translate-y: 0px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -2372,6 +2396,10 @@ h1 {
 
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .sm\:overflow-scroll {
